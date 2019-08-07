@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class='header'>
+   关灯睡觉啦伙计们  
+</view>
+<view>
+
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+
+  <view wx:if='{{deviceConnected}}'>
+
+    Verbunden
+
+  </view>
+
+  <view wx:else>
+
+    Nicht Verbunden
+
+  </view>
+
+</view>
+
+<text> \n </text>
+<text> \n </text>
+<text> \n </text>
+
+<slider 
+    max="125"
+    min="45"
+    step="1"
+    show-value="true"
+    bindchange="listenerSlider"
+/>
+
+
+ 
